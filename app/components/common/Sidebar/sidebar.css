@@ -1,0 +1,79 @@
+.sidebar-container {
+    display: flex;
+    padding: 0;
+    margin-top: 19px;
+
+}
+
+.sidebar {
+    background: #fff;
+    color: #fff;
+    width: 105px;
+    transition: all 0.5s;
+    padding-top: 6px;
+    box-shadow: 0px 8px 10px #00000033;
+    border-radius: 105px;
+    margin-left: 20px;
+    text-align: center;
+    height: 96%;
+    position: fixed;
+}
+
+.icon-container {
+    text-align: center;
+    width: 75px;
+    height: 75px;
+    padding: 6px;
+    margin: 17px;
+    display: block;
+    border-radius: 7px;
+    position: relative;
+    box-shadow: 0px 0px 10px #00000026;
+}
+
+.icon-container .active:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #FFC94A;
+    border-radius: 666px;
+    width: 8px;
+    height: 8px;
+
+}
+
+.icon-container a:before {
+    left: 5px;
+    top: 5px;
+}
+
+.icon-container a :hover::before {
+    background-color: #fff;
+}
+
+
+
+.icon-container:hover {
+    background: #FFC94A 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+}
+
+
+
+.icon-container img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 5px;
+    margin-top: 4px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.link_text {
+    font-size: 10px;
+    color: #000;
+    text-decoration: none !important;
+    margin-bottom: 0;
+}

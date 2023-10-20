@@ -1,0 +1,45 @@
+image: node:18  # Choose your Node.js version
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Build and Deploy to S3
+          caches:
+            - node
+          script:
+            - yarn   # Use Yarn for dependency installation
+            - yarn run build    # Modify this according to your build script
+          artifacts:
+            - build/**  # Include the built website files as artifacts for deployment tracking.
+
+      - step:
+          name: Build and Push Docker Image
+          script:
+            - export IMAGE_NAME=$PDOCKER_HUB_USERNAME/$BITBUCKET_REPO_SLUG:$BITBUCKET_BUILD_NUMBER
+            - docker build -t $IMAGE_NAME .
+            - docker login --username $PDOCKER_HUB_USERNAME --password $PDOCKER_HUB_PASSWORD
+            - docker push $IMAGE_NAME
+          services:
+            - docker
+
+      - step:
+          name: Deploy to S3 and Kubernetes (Production)
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.2.4
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                S3_BUCKET: $S3_BUCKET
+                ACL: "public-read"
+                LOCAL_PATH: 'build'  # Modify this according to your build output
+                DELETE_FLAG: 'true'  # Set to 'true' to delete removed files
+
+            - sed -i "s|{{image}}|$DOCKER_HUB_USERNAME/$BITBUCKET_REPO_SLUG:$BITBUCKET_BUILD_NUMBER|g" kubernetes/deployment.yaml  # Replace placeholders in deployment YAML
+
+            - pipe: atlassian/kubectl-run:3.7.0
+              variables:
+                KUBE_CONFIG: $KUBE_CONFIG
+                KUBECTL_COMMAND: 'apply'
+                RESOURCE_PATH: 'kubernetes/deployment.yaml'

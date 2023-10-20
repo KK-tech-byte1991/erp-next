@@ -1,0 +1,78 @@
+.form-group{
+    background: #D9EAFD 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.radiobtn{
+    float: right;
+    vertical-align: middle;
+}
+
+.commandbtn{
+    margin-top: 50px;
+}
+
+.commandbtn button{
+    width: 100px;
+    border: 1px solid #00000000;
+    border-radius: 10px;
+    padding: 5px;
+    font: normal normal normal 17px/30px Oswald;
+}
+
+.savebtn{
+    background: #B2EBB2 0% 0% no-repeat padding-box;
+    color:#000000 !important;
+}
+
+.resetbtn{    
+    background: #D9EAFD 0% 0% no-repeat padding-box;
+    color: #000724 !important;
+}
+
+.cancelbtn{    
+    color: #000724 !important;
+    background: #EBB2B2 0% 0% no-repeat padding-box;
+}
+
+.cmdbtn{
+    float: right;
+}
+
+.nextbtn{
+    background: #B2EBB2 0% 0% no-repeat padding-box;
+    color:#000000 !important;
+    margin-top: 15px;
+    width: 100px;
+    border: 1px solid #00000000;
+    border-radius: 10px;
+    padding: 5px;
+    font: normal normal normal 17px/30px Oswald;
+    float: right;
+}
+
+.Uploadbtnspace{
+    background: #F7F7F8 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    /* padding: 100px 133px; */
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.uploadbtn{
+    background: #499DFE 0% 0% no-repeat padding-box ;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 16%;
+    color:white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+}
+
+.uploadbtn img {
+    width: 15%;
+    margin-right: 14px;
+    margin-top: -4px;
+}

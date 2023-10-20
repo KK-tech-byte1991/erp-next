@@ -1,0 +1,140 @@
+.trustbg {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+
+    border-radius: 34px;
+}
+
+.trust {
+    padding: 20px;
+}
+
+.trustBtn {
+    background: #FFE7AF 0% 0% no-repeat padding-box;
+    border: 1px solid #00000000;
+    border-radius: 8px;
+    opacity: 1;
+    padding: 2px;
+    width: 190px;
+    color: #000000;
+    font: normal normal bold 18px/29px DM Sans;
+    margin-top: 15px;
+}
+
+.trust label {
+    margin-top: 10px;
+    font: normal normal medium 15px/24px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.displayprofile img {
+    width: 35%;
+    margin: 0px 60px 0px;
+}
+
+.displayprofile button {
+    margin: 0px 0px 0px 50px;
+    width: 120px;
+    color: #ffffff;
+    background: #499DFE 0% 0% no-repeat padding-box;
+    border: 1px solid #00000000;
+    border-radius: 6px;
+    padding: 3px;
+}
+
+.displayprofile p {
+    color: #7A7E83;
+    font: normal normal medium 11px/15px DM Sans;
+    width: 90px;
+    font-size: 10px;
+    margin-left: 60px;
+}
+
+.displayprofile input {
+    visibility: hidden;
+    width: 0px;
+}
+
+.textBox {
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid #499DFE;
+    margin-top: 10px;
+}
+
+.addressbox {
+    height: 125px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 20px;
+    border: 1px solid #499DFE;
+    margin-top: 10px;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .btns {
+        margin: 10px 30px;
+    }
+}
+
+
+
+.back {
+    background: #D9EAFD 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 50px;
+    padding: 15px;
+    font-family: 'Outfit', sans-serif;
+    color: #000000;
+    font-size: 12px;
+}
+
+.pdfButton {
+    background: #D9EAFD 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    border: none;
+    width: 140px;
+    height: 50px;
+    padding: 15px;
+    font-family: 'Outfit', sans-serif;
+    color: #000000;
+    font-size: 12px;
+}
+
+.tableTrust {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.back:hover {
+    background-color: #4A9EFF;
+    color: #FFFFFF;
+}
+
+
+
+.configText {
+    width: 100%;
+    display: flex;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid #499DFE;
+    margin-top: 10px;
+    font: var(--unnamed-font-style-normal) normal 600 20px/var(--unnamed-line-spacing-21) var(--unnamed-font-family-outfit);
+    text-align: left;
+    font: normal normal 600 14px/21px Outfit;
+    color: #000000;
+}
+
+
+
+.radioBtn {
+    margin-left: auto;
+}
+

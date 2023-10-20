@@ -1,0 +1,174 @@
+.trustbg {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+}
+
+
+
+.customBtn {
+    background: #499DFE;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 13px;
+    width: 100%;
+}
+
+.uploadBG {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.uploadBG img {
+    width: 40%;
+}
+
+.uploadbgBlue {
+    background: #D9EAFD 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    width: 100%;
+    padding: 25%;
+}
+
+
+.backgroundColorOrangetable {
+    background: #FFE7AF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+}
+
+
+.imgBackWhite {
+    display: inline-block;
+}
+
+
+td:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+td:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.activeBtn {
+    background: #00BE00 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 17px;
+    border: none;
+    font-size: 11px;
+    padding: 5px 25px;
+    color: #fff;
+}
+
+.inner {
+    display: inline-block !important;
+}
+
+.backBtnblock {
+    width: 14%;
+}
+
+
+
+.addImg:before {
+    content: "";
+    display: inline-table;
+    background: url("../../assets/Images/icon/location-on.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+
+}
+.esatateimg:before {
+    content: "";
+    display: inline-table;
+    background: url("../../assets/Images/icon/eatatemanager.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+
+}
+
+.globeImg:before {
+    content: "";
+    display: inline-table;
+    background: url("../../assets/Images/icon/globe.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+
+}
+
+.wifiImg:before {
+    content: "";
+    display: inline-table;
+    background: url("../../assets/Images/icon/wifi-tethering.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.settingImg:before {
+    content: "";
+    display: inline-table;
+    background: url("../../assets/Images/icon/settings.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.callImg:before {
+    content: "";
+    display: inline-table;
+    background: url("../../assets/Images/icon/call.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.required-field::before {
+    content: "*";
+    color: red !important;
+}
+
+/* select */
+select {
+    background-color: white;
+    border: thin solid #D9EAFD;
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 29px;
+    padding: 10px;
+    width: 257px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* arrows */
+
+select.classic {
+    background-image: url("../../assets/Images/downArrow.png"),
+        linear-gradient(to right, skyblue, skyblue);
+    background-position: calc(100% - 19px) calc(1em + 0px), calc(100% - 15px) calc(1em + -4px), 100% 0;
+    background-size: 1.5em 1.5em, 2em 2em, 0.5em 0.5em;
+    background-repeat: no-repeat;
+}
+
+select.classic:hover {
+    background-image: url("../../assets/Images/downArrow.png"),
+        linear-gradient(to right, #4A9EFF, #4A9EFF);
+    background-position: calc(100% - 19px) calc(1em + 0px), calc(100% - 15px) calc(1em + -4px), 100% 0;
+    background-size: 1.5em 1.5em, 2em 2em, 0.5em 0.5em;
+    background-repeat: no-repeat;
+}
+
+
+.activeBtn:before {
+    content: "";
+    display: inline-table;
+    background: url("../../assets/Images/icon/active-icon.png") no-repeat;
+    width: 20px;
+    height: 20px;
+}

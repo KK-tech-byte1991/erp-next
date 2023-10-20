@@ -1,0 +1,148 @@
+.backgroundColorOrange {
+    background: #FFE7AF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+}
+
+.imgBackWhite {
+    display: inline-block;
+}
+
+
+
+
+.back {
+    background: #D9EAFD 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 50px;
+    padding: 15px;
+    font-family: 'Outfit', sans-serif;
+    color: #000000;
+    font-size: 12px;
+}
+
+.back:hover {
+    background-color: #4A9EFF;
+    color: #FFFFFF;
+}
+
+.tableTrust {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.backgroundColorLightBlue {
+    background: #D9EAFD 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+}
+.addImg:before {
+    content: "";
+    display: inline-table;
+    background: url("../../assets/Images/icon/location-on.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+  
+  }
+  .globeImg:before {
+    content: "";
+    display: inline-table;
+    background: url("../../assets/Images/icon/globe.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+   
+  }
+  .wifiImg:before {
+    content: "";
+    display: inline-table;
+    background: url("../../assets/Images/icon/wifi-tethering.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+  .settingImg:before {
+    content: "";
+    display: inline-table;
+    background: url("../../assets/Images/icon/settings.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+  .callImg:before{
+    content: "";
+    display: inline-table;
+    background: url("../../assets/Images/icon/call.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+  
+  select {
+
+    background-color: white;
+    border: thin solid #D9EAFD;
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 29px;
+    padding: 10px;
+  
+  }
+select.classic {
+  background-image:url("../../assets/Images/downArrow.png"),
+    linear-gradient(to right, #d9eafd, #d9eafd);
+  background-position: calc(100% - 19px) calc(1em + 0px), calc(100% - 15px) calc(1em + -4px), 100% 0;
+  background-size: 1.5em 1.5em, 2em 2em, 0.5em 0.5em;
+  background-repeat: no-repeat;
+
+}
+select.classic:hover  {
+  background-image:url("../../assets/Images/downArrow.png"),
+    linear-gradient(to right, #4A9EFF, #4A9EFF);
+  background-position: calc(100% - 19px) calc(1em + 0px), calc(100% - 15px) calc(1em + -4px), 100% 0;
+  background-size: 1.5em 1.5em, 2em 2em, 0.5em 0.5em;
+  background-repeat: no-repeat;
+}
+.activeBtn:before{
+  content: "";
+  display: inline-table;
+  background: url("../../assets/Images/icon/active-icon.png") no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.InActiveBtn:before{
+  content: "";
+  display: inline-table;
+  background: url("../../assets/Images/icon/inactive-icon.png") no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+ 
+/* .IconBox{
+  display: flex;
+}
+.Tableicon-container {
+width: 3rem;
+height: auto;
+}
+
+.Tableicon-container img {
+  width: 100%;
+  height: auto;
+}
+
+.Tableicon-container img:nth-child(2) {
+  display: none; 
+}
+
+.Tableicon-container:hover img:nth-child(1) {
+  display: none;
+
+}
+
+.Tableicon-container:hover img:nth-child(2) {
+  display: block;
+
+} */
+

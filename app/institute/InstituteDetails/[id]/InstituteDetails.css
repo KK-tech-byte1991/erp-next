@@ -1,0 +1,63 @@
+
+.trustbg {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+}
+
+.box {
+    padding: 15px 34px !important;
+}
+
+.formlabel{
+    color: #000 !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    margin-top: 19px !important;
+    margin-bottom: 5px !important;
+    font-family: 'Outfit', sans-serif !important;
+   
+}
+.inputstyle{
+    background: #FFFFFF 0% 0% no-repeat padding-box !important;
+    border: 1px solid #499DFE !important;
+    border-radius: 10px !important;
+    line-height: 1.5;
+    color: #000;
+    display: block;
+    width: 100%;
+    padding: 12PX 13PX !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+   
+}
+
+.btnstylebg1:hover {
+    background: #D9EAFD !important;
+}
+.btnstylebg1 {
+    background: #D9EAFD;
+}
+.btnstylebg2 {
+    background: #EBB2B2;
+}
+.btnstylebg2:hover {
+    background: #EBB2B2 !important;
+}
+.textareacss{
+    overflow: hidden;
+}
+[role=alert] {
+    color: red;
+    font-size: 14px;
+}
+  .alertspecific{
+    position: absolute;
+    right: -133px;
+    top: 63px;
+  }
+  .paddingAbove {
+    padding-top: 93px;
+}
+  .pincodebox{
+    position:relative;
+  }
